@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E38F9CA5-1FC9-4CD4-9792-05294BAC4CFC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AnimeArena</RootNamespace>
+    <AssemblyName>AnimeArena</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AbilityClass, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\AbilityClass\AbilityClass\bin\Debug\netstandard2.0\AbilityClass.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterAttackertron, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\CharacterAttackertron\CharacterAttackertron\bin\Debug\netstandard2.0\CharacterAttackertron.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterChachamaru">
+      <HintPath>..\dll\CharacterChachamaru\CharacterChachamaru\bin\Debug\CharacterChachamaru.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterClass, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Character\Character\bin\Debug\netstandard2.0\CharacterClass.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterDummybot, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\CharacterDummybot\CharacterDummybot\bin\Debug\netstandard2.0\CharacterDummybot.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterGray, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\CharacterGray\CharacterGray\bin\Debug\CharacterGray.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterGunha">
+      <HintPath>..\dll\CharacterGunha\CharacterGunha\bin\Debug\CharacterGunha.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterIchigo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\CharacterIchigo\CharacterIchigo\obj\Debug\netstandard2.0\CharacterIchigo.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterInvinco-bill, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\CharacterInvinco-bill\CharacterInvinco-bill\bin\Debug\netstandard2.0\CharacterInvinco-bill.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterItachi">
+      <HintPath>..\dll\CharacterItachi\CharacterItachi\bin\Debug\CharacterItachi.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterMidoriya, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\CharacterMidoriya\CharacterMidoriya\bin\Debug\netstandard2.0\CharacterMidoriya.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterMinato">
+      <HintPath>..\dll\CharacterMinato\CharacterMinato\bin\Debug\CharacterMinato.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterMirio">
+      <HintPath>..\dll\CharacterMirio\CharacterMirio\bin\Debug\CharacterMirio.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterMisaka, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\CharacterMisaka\CharacterMisaka\bin\Debug\netstandard2.0\CharacterMisaka.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterNaruto, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\CharacterNaruto\CharacterNaruto\bin\Debug\netstandard2.0\CharacterNaruto.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterNatsu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\CharacterNatsu\CharacterNatsu\bin\Debug\netstandard2.0\CharacterNatsu.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterSaber, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\CharacterSaber\CharacterSaber\bin\Debug\netstandard2.0\CharacterSaber.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterSnowWhite, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\CharacterSnowWhite\CharacterSnowWhite\bin\Debug\netstandard2.0\CharacterSnowWhite.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterTatsumi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\CharacterTatsumi\CharacterTatsumi\bin\Debug\netstandard2.0\CharacterTatsumi.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterToga, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\CharacterToga\CharacterToga\bin\Debug\CharacterToga.dll</HintPath>
+    </Reference>
+    <Reference Include="CharacterTsunayoshi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\CharacterTsunayoshi\CharacterTsunayoshi\bin\Debug\netstandard2.0\CharacterTsunayoshi.dll</HintPath>
+    </Reference>
+    <Reference Include="ClassKuroko">
+      <HintPath>..\dll\ClassKuroko\ClassKuroko\bin\Debug\ClassKuroko.dll</HintPath>
+    </Reference>
+    <Reference Include="EffectClass, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\EffectClass\EffectClass\bin\Debug\netstandard2.0\EffectClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ichigo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ichigo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ichigo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ichigo4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ichigoprof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\midoriya1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\midoriya2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\midoriya3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\midoriya4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\midoriyaprof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\misaka1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\misaka2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\misaka3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\misaka4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\misakaprof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naruto 3-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naruto 3-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naruto 3-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naruto1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naruto1-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naruto2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naruto4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\narutoprof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\natsu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\natsu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\natsu3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\natsu4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\natsuprof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saber1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saber2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saber3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saber4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saberprof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snowwhite1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snowwhite2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snowwhite3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snowwhite4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snowwhiteprof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tatsumi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tatsumi2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tatsumi3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tatsumi4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tatsumiprof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tsunayoshi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tsunayoshi2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tsunayoshi3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tsunayoshi4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tsunayoshiprof.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="images\arrowright.png" />
+    <None Include="images\arrowleft.png" />
+    <Content Include="images\attackertronprof.png" />
+    <Content Include="images\chachamaru1.png" />
+    <Content Include="images\chachamaru2.png" />
+    <Content Include="images\chachamaru3.png" />
+    <Content Include="images\chachamaru4.png" />
+    <Content Include="images\chachamaruprof.png" />
+    <Content Include="images\dummybotprof.png" />
+    <Content Include="images\gray1-1.png" />
+    <Content Include="images\gray1-2.png" />
+    <Content Include="images\gray2.png" />
+    <Content Include="images\gray3.png" />
+    <Content Include="images\gray4.png" />
+    <Content Include="images\grayprof.png" />
+    <Content Include="images\healthbarback.png" />
+    <Content Include="images\healthbarbackreverse.png" />
+    <Content Include="images\healthbarfront.png" />
+    <Content Include="images\ichigo1.png" />
+    <Content Include="images\ichigo2.png" />
+    <Content Include="images\ichigo3.png" />
+    <Content Include="images\ichigo4.png" />
+    <Content Include="images\ichigoprof.png" />
+    <Content Include="images\invincobillprof.png" />
+    <Content Include="images\itachiprof.png" />
+    <Content Include="images\kuroko1.png" />
+    <Content Include="images\kuroko2.png" />
+    <Content Include="images\kuroko3.png" />
+    <Content Include="images\kuroko4.png" />
+    <Content Include="images\kurokoprof.png" />
+    <Content Include="images\mentalEnergy.png" />
+    <Content Include="images\midoriya1.png" />
+    <Content Include="images\midoriya2.png" />
+    <Content Include="images\midoriya3.png" />
+    <Content Include="images\midoriya4.png" />
+    <Content Include="images\midoriyaprof.png" />
+    <Content Include="images\minato1.png" />
+    <Content Include="images\minato2.png" />
+    <Content Include="images\minato3.png" />
+    <Content Include="images\minato4.png" />
+    <Content Include="images\minatoprof.png" />
+    <Content Include="images\minichachamaru1.png" />
+    <Content Include="images\minichachamaru2.png" />
+    <Content Include="images\minichachamaru3.png" />
+    <Content Include="images\minichachamaru4.png" />
+    <Content Include="images\minigray1-1.png" />
+    <Content Include="images\minigray1-2.png" />
+    <Content Include="images\minigray2.png" />
+    <Content Include="images\minigray3.png" />
+    <Content Include="images\minigray4.png" />
+    <Content Include="images\miniichigo1.png" />
+    <Content Include="images\miniichigo2.png" />
+    <Content Include="images\miniichigo3.png" />
+    <Content Include="images\miniichigo4.png" />
+    <Content Include="images\minikuroko1.png" />
+    <Content Include="images\minikuroko2.png" />
+    <Content Include="images\minikuroko3.png" />
+    <Content Include="images\minikuroko4.png" />
+    <Content Include="images\minimidoriya1.png" />
+    <Content Include="images\minimidoriya2.png" />
+    <Content Include="images\minimidoriya3.png" />
+    <Content Include="images\minimidoriya4.png" />
+    <Content Include="images\miniminato1.png" />
+    <Content Include="images\miniminato2.png" />
+    <Content Include="images\miniminato3.png" />
+    <Content Include="images\miniminato4.png" />
+    <Content Include="images\minimirio1.png" />
+    <Content Include="images\minimirio2.png" />
+    <Content Include="images\minimirio3.png" />
+    <Content Include="images\minimirio4.png" />
+    <Content Include="images\minimisaka1.png" />
+    <Content Include="images\minimisaka2.png" />
+    <Content Include="images\minimisaka3.png" />
+    <Content Include="images\minimisaka4.png" />
+    <Content Include="images\mininaruto 3-1.png" />
+    <Content Include="images\mininaruto 3-2.png" />
+    <Content Include="images\mininaruto 3-3.png" />
+    <Content Include="images\mininaruto1-2.png" />
+    <Content Include="images\mininaruto1.png" />
+    <Content Include="images\mininaruto2.png" />
+    <Content Include="images\mininaruto4.png" />
+    <Content Include="images\mininatsu1.png" />
+    <Content Include="images\mininatsu2.png" />
+    <Content Include="images\mininatsu3.png" />
+    <Content Include="images\mininatsu4.png" />
+    <Content Include="images\minisaber1.png" />
+    <Content Include="images\minisaber2.png" />
+    <Content Include="images\minisaber3.png" />
+    <Content Include="images\minisaber4.png" />
+    <Content Include="images\minisnowwhite1.png" />
+    <Content Include="images\minisnowwhite2.png" />
+    <Content Include="images\minisnowwhite3.png" />
+    <Content Include="images\minisnowwhite4.png" />
+    <Content Include="images\minisogiita1.png" />
+    <Content Include="images\minisogiita2.png" />
+    <Content Include="images\minisogiita3.png" />
+    <Content Include="images\minisogiita4.png" />
+    <Content Include="images\minitatsumi1.png" />
+    <Content Include="images\minitatsumi2.png" />
+    <Content Include="images\minitatsumi3.png" />
+    <Content Include="images\minitatsumi4.png" />
+    <Content Include="images\minitoga1.png" />
+    <Content Include="images\minitoga2.png" />
+    <Content Include="images\minitoga3.png" />
+    <Content Include="images\minitoga4.png" />
+    <Content Include="images\minitsunayoshi1.png" />
+    <Content Include="images\minitsunayoshi2.png" />
+    <Content Include="images\minitsunayoshi3.png" />
+    <Content Include="images\minitsunayoshi4.png" />
+    <Content Include="images\mirio1.png" />
+    <Content Include="images\mirio2.png" />
+    <Content Include="images\mirio3.png" />
+    <Content Include="images\mirio4.png" />
+    <Content Include="images\mirioprof.png" />
+    <Content Include="images\misaka1.png" />
+    <Content Include="images\misaka2.png" />
+    <Content Include="images\misaka3.png" />
+    <Content Include="images\misaka4.png" />
+    <Content Include="images\misakaprof.png" />
+    <Content Include="images\naruto 3-1.png" />
+    <Content Include="images\naruto 3-2.png" />
+    <Content Include="images\naruto 3-3.png" />
+    <Content Include="images\naruto1-2.png" />
+    <Content Include="images\naruto1.png" />
+    <Content Include="images\naruto2.png" />
+    <Content Include="images\naruto4.png" />
+    <Content Include="images\narutoprof.png" />
+    <Content Include="images\natsu1.png" />
+    <Content Include="images\natsu2.png" />
+    <Content Include="images\natsu3.png" />
+    <Content Include="images\natsu4.png" />
+    <Content Include="images\natsuprof.png" />
+    <Content Include="images\nullchachamaru1.png" />
+    <Content Include="images\nullchachamaru2.png" />
+    <Content Include="images\nullchachamaru3.png" />
+    <Content Include="images\nullchachamaru4.png" />
+    <Content Include="images\nullgray1-1.png" />
+    <Content Include="images\nullgray1-2.png" />
+    <Content Include="images\nullgray2.png" />
+    <Content Include="images\nullgray3.png" />
+    <Content Include="images\nullgray4.png" />
+    <Content Include="images\nullichigo1.png" />
+    <Content Include="images\nullichigo2.png" />
+    <Content Include="images\nullichigo3.png" />
+    <Content Include="images\nullichigo4.png" />
+    <Content Include="images\nullkuroko1.png" />
+    <Content Include="images\nullkuroko2.png" />
+    <Content Include="images\nullkuroko3.png" />
+    <Content Include="images\nullkuroko4.png" />
+    <Content Include="images\nullmidoriya1.png" />
+    <Content Include="images\nullmidoriya2.png" />
+    <Content Include="images\nullmidoriya3.png" />
+    <Content Include="images\nullmidoriya4.png" />
+    <Content Include="images\nullminato1.png" />
+    <Content Include="images\nullminato2.png" />
+    <Content Include="images\nullminato3.png" />
+    <Content Include="images\nullminato4.png" />
+    <Content Include="images\nullmirio1.png" />
+    <Content Include="images\nullmirio2.png" />
+    <Content Include="images\nullmirio3.png" />
+    <Content Include="images\nullmirio4.png" />
+    <Content Include="images\nullmisaka1.png" />
+    <Content Include="images\nullmisaka2.png" />
+    <Content Include="images\nullmisaka3.png" />
+    <Content Include="images\nullmisaka4.png" />
+    <Content Include="images\nullnaruto 3-1.png" />
+    <Content Include="images\nullnaruto 3-2.png" />
+    <Content Include="images\nullnaruto 3-3.png" />
+    <Content Include="images\nullnaruto1-2.png" />
+    <Content Include="images\nullnaruto1.png" />
+    <Content Include="images\nullnaruto2.png" />
+    <Content Include="images\nullnaruto4.png" />
+    <Content Include="images\nullnatsu1.png" />
+    <Content Include="images\nullnatsu2.png" />
+    <Content Include="images\nullnatsu3.png" />
+    <Content Include="images\nullnatsu4.png" />
+    <Content Include="images\nullsaber1.png" />
+    <Content Include="images\nullsaber2.png" />
+    <Content Include="images\nullsaber3.png" />
+    <Content Include="images\nullsaber4.png" />
+    <Content Include="images\nullsnowwhite1.png" />
+    <Content Include="images\nullsnowwhite2.png" />
+    <Content Include="images\nullsnowwhite3.png" />
+    <Content Include="images\nullsnowwhite4.png" />
+    <Content Include="images\nullsogiita1.png" />
+    <Content Include="images\nullsogiita2.png" />
+    <Content Include="images\nullsogiita3.png" />
+    <Content Include="images\nullsogiita4.png" />
+    <Content Include="images\nulltatsumi1.png" />
+    <Content Include="images\nulltatsumi2.png" />
+    <Content Include="images\nulltatsumi3.png" />
+    <Content Include="images\nulltatsumi4.png" />
+    <Content Include="images\nulltoga1.png" />
+    <Content Include="images\nulltoga2.png" />
+    <Content Include="images\nulltoga3.png" />
+    <Content Include="images\nulltoga4.png" />
+    <Content Include="images\nulltsunayoshi1.png" />
+    <Content Include="images\nulltsunayoshi2.png" />
+    <Content Include="images\nulltsunayoshi3.png" />
+    <Content Include="images\nulltsunayoshi4.png" />
+    <Content Include="images\physicalEnergy.png" />
+    <Content Include="images\randomenergy.png" />
+    <Content Include="images\saber1.png" />
+    <Content Include="images\saber2.png" />
+    <Content Include="images\saber3.png" />
+    <Content Include="images\saber4.png" />
+    <Content Include="images\saberprof.png" />
+    <Content Include="images\selectedattackertronprof.png" />
+    <Content Include="images\selectedchachamaru1.png" />
+    <Content Include="images\selectedchachamaru2.png" />
+    <Content Include="images\selectedchachamaru3.png" />
+    <Content Include="images\selectedchachamaru4.png" />
+    <Content Include="images\selectedchachamaruprof.png" />
+    <Content Include="images\selecteddummybotprof.png" />
+    <Content Include="images\selectedgray1-1.png" />
+    <Content Include="images\selectedgray1-2.png" />
+    <Content Include="images\selectedgray2.png" />
+    <Content Include="images\selectedgray3.png" />
+    <Content Include="images\selectedgray4.png" />
+    <Content Include="images\selectedgrayprof.png" />
+    <Content Include="images\selectedichigo1.png" />
+    <Content Include="images\selectedichigo2.png" />
+    <Content Include="images\selectedichigo3.png" />
+    <Content Include="images\selectedichigo4.png" />
+    <Content Include="images\selectedichigoprof.png" />
+    <Content Include="images\selectedinvincobillprof.png" />
+    <Content Include="images\selecteditachiprof.png" />
+    <Content Include="images\selectedkuroko1.png" />
+    <Content Include="images\selectedkuroko2.png" />
+    <Content Include="images\selectedkuroko3.png" />
+    <Content Include="images\selectedkuroko4.png" />
+    <Content Include="images\selectedkurokoprof.png" />
+    <Content Include="images\selectedmidoriya1.png" />
+    <Content Include="images\selectedmidoriya2.png" />
+    <Content Include="images\selectedmidoriya3.png" />
+    <Content Include="images\selectedmidoriya4.png" />
+    <Content Include="images\selectedmidoriyaprof.png" />
+    <Content Include="images\selectedminato1.png" />
+    <Content Include="images\selectedminato2.png" />
+    <Content Include="images\selectedminato3.png" />
+    <Content Include="images\selectedminato4.png" />
+    <Content Include="images\selectedminatoprof.png" />
+    <Content Include="images\selectedmirio1.png" />
+    <Content Include="images\selectedmirio2.png" />
+    <Content Include="images\selectedmirio3.png" />
+    <Content Include="images\selectedmirio4.png" />
+    <Content Include="images\selectedmirioprof.png" />
+    <Content Include="images\selectedmisaka1.png" />
+    <Content Include="images\selectedmisaka2.png" />
+    <Content Include="images\selectedmisaka3.png" />
+    <Content Include="images\selectedmisaka4.png" />
+    <Content Include="images\selectedmisakaprof.png" />
+    <Content Include="images\selectednaruto 3-1.png" />
+    <Content Include="images\selectednaruto 3-2.png" />
+    <Content Include="images\selectednaruto 3-3.png" />
+    <Content Include="images\selectednaruto1-2.png" />
+    <Content Include="images\selectednaruto1.png" />
+    <Content Include="images\selectednaruto2.png" />
+    <Content Include="images\selectednaruto4.png" />
+    <Content Include="images\selectednarutoprof.png" />
+    <Content Include="images\selectednatsu1.png" />
+    <Content Include="images\selectednatsu2.png" />
+    <Content Include="images\selectednatsu3.png" />
+    <Content Include="images\selectednatsu4.png" />
+    <Content Include="images\selectednatsuprof.png" />
+    <Content Include="images\selectedsaber1.png" />
+    <Content Include="images\selectedsaber2.png" />
+    <Content Include="images\selectedsaber3.png" />
+    <Content Include="images\selectedsaber4.png" />
+    <Content Include="images\selectedsaberprof.png" />
+    <Content Include="images\selectedsnowwhite1.png" />
+    <Content Include="images\selectedsnowwhite2.png" />
+    <Content Include="images\selectedsnowwhite3.png" />
+    <Content Include="images\selectedsnowwhite4.png" />
+    <Content Include="images\selectedsnowwhiteprof.png" />
+    <Content Include="images\selectedsogiita1.png" />
+    <Content Include="images\selectedsogiita2.png" />
+    <Content Include="images\selectedsogiita3.png" />
+    <Content Include="images\selectedsogiita4.png" />
+    <Content Include="images\selectedsogiitaprof.png" />
+    <Content Include="images\selectedtatsumi1.png" />
+    <Content Include="images\selectedtatsumi2.png" />
+    <Content Include="images\selectedtatsumi3.png" />
+    <Content Include="images\selectedtatsumi4.png" />
+    <Content Include="images\selectedtatsumiprof.png" />
+    <Content Include="images\selectedtoga1.png" />
+    <Content Include="images\selectedtoga2.png" />
+    <Content Include="images\selectedtoga3.png" />
+    <Content Include="images\selectedtoga4.png" />
+    <Content Include="images\selectedtogaprof.png" />
+    <Content Include="images\selectedtsunayoshi1.png" />
+    <Content Include="images\selectedtsunayoshi2.png" />
+    <Content Include="images\selectedtsunayoshi3.png" />
+    <Content Include="images\selectedtsunayoshi4.png" />
+    <Content Include="images\selectedtsunayoshiprof.png" />
+    <Content Include="images\snowwhite1.png" />
+    <Content Include="images\snowwhite2.png" />
+    <Content Include="images\snowwhite3.png" />
+    <Content Include="images\snowwhite4.png" />
+    <Content Include="images\snowwhiteprof.png" />
+    <Content Include="images\sogiita1.png" />
+    <Content Include="images\sogiita2.png" />
+    <Content Include="images\sogiita3.png" />
+    <Content Include="images\sogiita4.png" />
+    <Content Include="images\sogiitaprof.png" />
+    <Content Include="images\specialEnergy.png" />
+    <Content Include="images\tatsumi1.png" />
+    <Content Include="images\tatsumi2.png" />
+    <Content Include="images\tatsumi3.png" />
+    <Content Include="images\tatsumi4.png" />
+    <Content Include="images\tatsumiprof.png" />
+    <Content Include="images\toga1.png" />
+    <Content Include="images\toga2.png" />
+    <Content Include="images\toga3.png" />
+    <Content Include="images\toga4.png" />
+    <Content Include="images\togaprof.png" />
+    <Content Include="images\tsunayoshi1.png" />
+    <Content Include="images\tsunayoshi2.png" />
+    <Content Include="images\tsunayoshi3.png" />
+    <Content Include="images\tsunayoshi4.png" />
+    <Content Include="images\tsunayoshiprof.png" />
+    <Content Include="images\unknown.png" />
+    <Content Include="images\weaponEnergy.png" />
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
